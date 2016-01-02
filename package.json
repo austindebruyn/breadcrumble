@@ -28,5 +28,8 @@
     "build": "mkdirp dist && gulp",
     "clean": "rimraf ./dist/*.js",
     "test": "mocha test"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
   }
 }
