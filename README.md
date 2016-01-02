@@ -19,11 +19,16 @@ var crumbs = breadcrumble.match('/users/33/profile');
 
 ### On the server
 
-`var breadcrumble = require('breadcrumble');`
+```js
+var breadcrumble = require('breadcrumble');
+```
 
 ### In the browser
 
-`var breadcrumble = require('breadcrumble/dist/breadcrumble.min.js');`
+The minified build does not print console warnings when used improperly.
+```js
+var breadcrumble = require('breadcrumble/dist/breadcrumble.min.js');
+`
 
 ### Dependencies
 
