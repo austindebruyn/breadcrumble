@@ -1,6 +1,8 @@
 breadcrumble
 ============
 
+[![Build Status](https://travis-ci.org/austindebruyn/breadcrumble.svg?branch=master)](https://travis-ci.org/austindebruyn/breadcrumble)
+
 A utility for building a list of breadcrumbs from chopped URL's.
 
 ## Usage
