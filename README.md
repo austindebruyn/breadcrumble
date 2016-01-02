@@ -28,7 +28,7 @@ var breadcrumble = require('breadcrumble');
 The minified build does not print console warnings when used improperly.
 ```js
 var breadcrumble = require('breadcrumble/dist/breadcrumble.min.js');
-`
+```
 
 ### Dependencies
 
