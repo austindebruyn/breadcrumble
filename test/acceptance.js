@@ -1,6 +1,6 @@
 
 var expect = require('chai').expect;
-var crumblr = require('..');
+var breadcrumble = require('..');
 
 var routes = [
   {
@@ -24,8 +24,8 @@ var routes = [
 describe('parsing', function () {
   var crumbs;
   beforeEach(function () {
-    crumblr.routes = routes;
-    crumbs = crumblr.match('/users/33/profile');
+    breadcrumble.routes = routes;
+    crumbs = breadcrumble.match('/users/33/profile');
   });
 
   it('should be an array of length 3', function () {
