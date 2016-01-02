@@ -1,0 +1,33 @@
+{
+  "name": "breadcrumble",
+  "version": "1.0.0",
+  "description": "A utility for building a list of breadcrumbs from chopped URL's.",
+  "main": "index.js",
+  "homepage": "https://github.com/austindebruyn/breadcrumble",
+  "authors": [
+    "Austin deBruyn <austin.debruyn@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austindebruyn/breadcrumble.git"
+  },
+  "dependencies": {
+    "envify": "^3.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.5.1",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.0",
+    "vinyl-transform": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdirp dist && gulp",
+    "clean": "rimraf ./dist",
+    "test": "mocha test"
+  }
+}
