@@ -62,10 +62,8 @@ type Route {
 ### Properties
 
 * `name`: Will be returned with matched path replaced. i.e. if the route descriptor is
-```js
-{ key: ':id', name: 'ID (:id)' }
-```
-and path `/33/` is matched, then in the returned array, `name` will be `"ID (33)"`.
+`{ key: ':id', name: 'ID (:id)' }` and path `"/33/"` is matched, then in the returned
+array, `name` will be `"ID (33)"`.
 * `hidden`: If this is present and `true`, then this descriptor will not be present in the
 returned breadcrumbs. Useful if you do not want your root (`/`) to appear, for example.
 
