@@ -27,7 +27,10 @@ describe('parsing params and regexes', function () {
     });
 
     it('should be able to route to the param', function () {
+      expect(crumbs[0].href).to.eql('/');
+      expect(crumbs[1].href).to.eql('/users/');
       expect(crumbs[2].href).to.eql('/users/33/');
+      expect(crumbs[3].href).to.eql('/users/33/profile/');
     });
   });
 
@@ -67,5 +70,23 @@ describe('with other properties', function () {
       3.14,
       { nda: 'required' }
     ]);
+  });
+});
+
+describe('hidden routes', function () {
+  var crumbs;
+
+  beforeEach(function () {
+    breadcrumble.config = config.hiddenRoutes;
+    crumbs = breadcrumble.match('/ca/mv/castro');
+  });
+
+  it('should be an array of length 2', function () {
+    expect(crumbs).to.be.an.instanceOf(Array);
+    expect(crumbs).to.have.length(2);
+  });
+
+  it('should not contain the two hidden routes', function () {
+    expect(_.pluck(crumbs, 'name')).to.eql(['California', 'Castro St.']);
   });
 });

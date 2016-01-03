@@ -58,3 +58,26 @@ exports.withHrefs = {
   ]
 };
 
+exports.hiddenRoutes = {
+  name: 'US',
+  hidden: true,
+  routes: [
+    {
+      key: 'ca',
+      name: 'California',
+      routes: [
+        {
+          key: 'mv',
+          name: 'Mountain View',
+          hidden: true,
+          routes: [
+            {
+              key: 'castro',
+              name: 'Castro St.'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
