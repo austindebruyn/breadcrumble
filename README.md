@@ -63,7 +63,8 @@ type Route {
 
 * `name`: Will be returned with matched path replaced. i.e. if the route descriptor is
 `{ key: ':id', name: 'ID (:id)' }` and path `"/33/"` is matched, then in the returned
-array, `name` will be `"ID (33)"`.
+array, `name` will be `"ID (33)"`. For regexes, use token `$0` to replace the first matched
+group.
 * `hidden`: If this is present and `true`, then this descriptor will not be present in the
 returned breadcrumbs. Useful if you do not want your root (`/`) to appear, for example.
 
