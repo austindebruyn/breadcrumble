@@ -37,13 +37,7 @@ descriptors for each matching fragments. If your config looks like this
 
 Then the result of `breadcrumble.match('/app/')` will be `[ { someProp: 1, someProp: 2 } ]`.
 
-### On the server
-
-```js
-var breadcrumble = require('breadcrumble');
-```
-
-### In the browser
+### Use in the browser
 
 ```js
 var breadcrumble = require('breadcrumble/dist/breadcrumble.min.js');
