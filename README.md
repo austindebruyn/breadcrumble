@@ -9,7 +9,7 @@ A utility for building a list of breadcrumbs from chopped URL's.
 
 ### From npm
 
-```bash
+```sh
 npm install --save breadcrumble
 ```
 
@@ -30,11 +30,9 @@ var crumbs = breadcrumble.match('/users/33/profile');
 Breadcrumble will match the given path against an optional config object or the
 module-global config (see below). This function will return an array of route
 descriptors for each matching fragments. If your config looks like this
-
 ```js
 { key: 'app', someProp: 1, someProp: 2 }
 ```
-
 Then the result of `breadcrumble.match('/app/')` will be `[ { someProp: 1, someProp: 2 } ]`.
 
 ### Use in the browser
@@ -49,7 +47,7 @@ You can provide your route config in the call to `match()` or set the module-glo
 with
 ```js
 breadcrumble.config = {...};
-```.
+```
 
 The schema for your route configuration is this (only `key` is required):
 ```js
