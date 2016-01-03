@@ -7,6 +7,15 @@
   "authors": [
     "Austin deBruyn <austin.debruyn@gmail.com>"
   ],
+  "keywords": [
+    "breadcrumbs",
+    "path",
+    "url",
+    "routing",
+    "ui",
+    "navigation",
+    "utility"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/austindebruyn/breadcrumble.git"
